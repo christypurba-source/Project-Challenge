@@ -1,0 +1,29 @@
+.container{
+	display: flex;
+    justify-content: center;
+}
+.atas {
+border: 640px;
+padding: 100px;
+background-color: aqua;
+text-align: center;
+}
+.kiriatas{
+width: 80%;
+height: 30px;
+background-color: #00008B;
+float: left;
+text-align: center;
+}
+.kananatas{
+width: 20%;
+height: 30px;
+background-color: purple;
+float: left;
+text-align: center;
+}
+.lingkaran{
+width: 100px;
+height: 100px;
+background-color: maroon;
+}

@@ -1,0 +1,168 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Css Responsive Flexbox Cards</title>
+ <style type="text/css">
+ 	* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fefefe;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 50px auto;
+}
+.heading {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 50px;
+  height: 200px;
+  margin-top: 40px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+
+.card {
+  width: 20%;
+  background: #fff;
+  border: 1px solid #ccc;
+  margin-bottom: 50px;
+  transition: 0.3s;
+}
+
+.card-header {
+  text-align: center;
+  padding: 20px 10px;
+  background: #575965 ;
+  color: #fff;
+}
+
+.card-body {
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.card-body .btn {
+  display: block;
+  color: #fff;
+  text-align: center;
+  background: #72D2E3;
+  margin-top: 30px;
+  text-decoration: none;
+  padding: 10px 5px;
+  border: 2px; 
+  color: white; 
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 1000px) {
+  .card {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .container {
+    width: 100%;
+  }
+
+  .heading {
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .card {
+    width: 80%;
+  }
+.btn {
+  border: 2px; 
+  color: white; 
+  padding: 14px 28px; 
+  cursor: pointer;
+}
+}
+ </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="heading">
+      <h1 style="font-size: 45px">Simple Pricing!</h1>
+      <p style="font-size: 20px">The most advanced cutomer support tools with a simple<br>
+      	and affordable pricing and you can always try for 30 days,<br>
+      free!</p>
+    </div>
+    <div class="row">
+      <div class="card">
+        <div class="card-header">
+          <h1>Basic</h1>
+        </div>
+        <div class="card-body">
+        	<h2>4 $ / month</h2>
+          <p>
+           10 projects<br>
+           10 page <br>
+           100 Mb Disk Space
+          </p>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <h1>Standard</h1>
+        </div>
+        <div class="card-body">
+        	<h2>8 $ / month</h2>
+          <p>
+           20 projects<br>
+           20 page <br>
+           200 Mb Disk Space
+          </p>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header">
+          <h1>Advance</h1>
+        </div>
+        <div class="card-body">
+        	<h2>12 $ / month</h2>
+          <p>
+           40 projects<br>
+           40 page <br>
+           500 Mb Disk Space
+          </p>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+      </div>
+      </div>
+      <div class="heading">
+      <h1 style="font-size: 45px">Frequently asked question!</h1>
+      <p style="font-size: 20px" "text-align: justify;">The most advanced cutomer support tools with a simple<br>
+      	and affordable pricing and you can always try for 30 days,<br>
+      free!</p>
+    </div>
+    </div>
+  </div>
+</body>
+
+</html>
